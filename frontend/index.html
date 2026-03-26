@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRUD Architect — AI App Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="container">
+
+    <header>
+      <div class="logo-row">
+        <div class="logo-icon">⚙️</div>
+        <h1>CRUD Architect</h1>
+      </div>
+      <p class="tagline">// describe your app → get full CRUD structure instantly</p>
+    </header>
+
+    <section class="prompt-section">
+
+      <div class="input-wrapper">
+        <div class="input-label">// Your App Prompt</div>
+        <textarea
+          id="promptInput"
+          rows="3"
+          placeholder="e.g. Build a student management system with grades and attendance..."
+        ></textarea>
+
+        <div class="btn-row">
+          <span class="examples-label">EXAMPLES →</span>
+          <div class="examples">
+            <button class="chip" onclick="setPrompt('Create a todo app')">Todo App</button>
+            <button class="chip" onclick="setPrompt('Build a student management system')">Student System</button>
+            <button class="chip" onclick="setPrompt('Create a notes app with tagging')">Notes App</button>
+            <button class="chip" onclick="setPrompt('Build an e-commerce product catalog')">E-Commerce</button>
+            <button class="chip" onclick="setPrompt('Create a blog platform with comments')">Blog Platform</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="generate-btn" id="generateBtn" onclick="handleGenerate()">
+        ⚡ Generate CRUD Structure
+      </button>
+
+      <div class="loading-bar" id="loadingBar"></div>
+      <div class="loading-msg" id="loadingMsg">🤖 AI is architecting your application...</div>
+      <div class="error-box" id="errorBox"></div>
+
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section">
+      <h2 class="how-title">How It Works</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-label">Enter a Prompt</div>
+          <p class="step-desc">Describe your application in plain English — no technical jargon required.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-label">AI Processes It</div>
+          <p class="step-desc">The engine parses your prompt and identifies entities, relationships, and operations.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-label">Get Full Structure</div>
+          <p class="step-desc">Receive entities, REST APIs, DB schema, sample FastAPI code, and improvement suggestions.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    CRUD ARCHITECT &nbsp;·&nbsp; Powered by Claude AI &nbsp;·&nbsp; Build faster, think clearer
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

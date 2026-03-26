@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRUD Architect — Generated Output</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="container">
+
+    <!-- Top nav bar -->
+    <nav class="result-nav">
+      <a href="index.html" class="back-btn">← Back to Generator</a>
+      <div class="nav-title">Generated Architecture</div>
+      <button class="copy-btn" id="copyAllBtn" onclick="copyAllCode()">📋 Copy Code</button>
+    </nav>
+
+    <!-- App name + stats -->
+    <div class="output-header">
+      <div class="output-title">
+        <span id="appName">App</span>
+        <span class="app-badge" id="appBadge">GENERATED</span>
+      </div>
+      <p class="output-prompt" id="outputPrompt"></p>
+    </div>
+
+    <div class="stats-row" id="statsRow"></div>
+
+    <!-- Cards grid -->
+    <div class="cards-grid">
+
+      <!-- Entities -->
+      <div class="card entities">
+        <div class="card-label"><span class="dot"></span>Entities / Models</div>
+        <div id="entitiesOut"></div>
+      </div>
+
+      <!-- DB Schema -->
+      <div class="card database">
+        <div class="card-label"><span class="dot"></span>Database Schema</div>
+        <div class="db-schema" id="dbOut"></div>
+      </div>
+
+      <!-- API Endpoints -->
+      <div class="card apis">
+        <div class="card-label"><span class="dot"></span>REST API Endpoints</div>
+        <div id="apisOut"></div>
+      </div>
+
+      <!-- AI Suggestions -->
+      <div class="card suggestions">
+        <div class="card-label"><span class="dot"></span>AI Suggestions</div>
+        <div id="suggestionsOut"></div>
+      </div>
+
+    </div>
+
+    <!-- Sample Code -->
+    <div class="code-card">
+      <div class="code-header">
+        <div class="code-dots">
+          <div class="code-dot"></div>
+          <div class="code-dot"></div>
+          <div class="code-dot"></div>
+        </div>
+        <span class="code-lang">Python · FastAPI — Sample Backend Code</span>
+        <button class="copy-btn" id="copyBtn" onclick="copyCode()">📋 Copy</button>
+      </div>
+      <pre id="codeOut"></pre>
+    </div>
+
+    <!-- New prompt CTA -->
+    <div class="cta-row">
+      <p class="cta-text">Want to generate another app?</p>
+      <a href="index.html" class="generate-btn" style="display:inline-block;text-align:center;text-decoration:none;width:auto;padding:14px 36px;">
+        ⚡ Generate Another App
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    CRUD ARCHITECT &nbsp;·&nbsp; Powered by Claude AI &nbsp;·&nbsp; Build faster, think clearer
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Load result data from sessionStorage on page load
+    window.addEventListener('DOMContentLoaded', loadResult);
+  </script>
+
+</body>
+</html>

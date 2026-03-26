@@ -1,0 +1,77 @@
+{
+  "_comment": "This file stores the last generated CRUD structure. Updated automatically on each generation.",
+  "apis": [
+    {
+      "desc": "List all tasks",
+      "method": "GET",
+      "path": "/tasks"
+    },
+    {
+      "desc": "Create a new task",
+      "method": "POST",
+      "path": "/tasks"
+    },
+    {
+      "desc": "Get task by ID",
+      "method": "GET",
+      "path": "/tasks/{id}"
+    },
+    {
+      "desc": "Update a task",
+      "method": "PUT",
+      "path": "/tasks/{id}"
+    },
+    {
+      "desc": "Delete a task",
+      "method": "DELETE",
+      "path": "/tasks/{id}"
+    },
+    {
+      "desc": "Mark task complete",
+      "method": "PATCH",
+      "path": "/tasks/{id}/done"
+    },
+    {
+      "desc": "List categories",
+      "method": "GET",
+      "path": "/categories"
+    },
+    {
+      "desc": "Create category",
+      "method": "POST",
+      "path": "/categories"
+    },
+    {
+      "desc": "Get tasks by user",
+      "method": "GET",
+      "path": "/users/{id}/tasks"
+    }
+  ],
+  "app_name": "Todo App",
+  "database": [
+    {
+      "fields": "id INT PK, title VARCHAR, status ENUM, due_date DATE, user_id FK, category_id FK",
+      "table": "Tasks"
+    },
+    {
+      "fields": "id INT PK, username VARCHAR, email VARCHAR, created_at TIMESTAMP",
+      "table": "Users"
+    },
+    {
+      "fields": "id INT PK, name VARCHAR, color VARCHAR, user_id FK",
+      "table": "Categories"
+    }
+  ],
+  "entities": [
+    "Task",
+    "User",
+    "Category"
+  ],
+  "prompt": "Create a todo app",
+  "suggestions": [
+    "Add due-date reminders with email / push notifications",
+    "Implement priority levels (Low, Medium, High, Urgent)",
+    "Add subtask / checklist items inside each task",
+    "Support recurring tasks (daily, weekly, monthly)"
+  ]
+}

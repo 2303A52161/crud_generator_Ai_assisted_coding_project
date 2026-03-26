@@ -1,0 +1,19 @@
+# ── Web Framework ───────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# ── Data Validation ─────────────────────────────────────────────
+pydantic==2.7.1
+
+# ── AI Providers (install whichever you use) ────────────────────
+openai==1.30.1          # for GPT-4 / GPT-4o
+anthropic==0.26.1       # for Claude
+
+# ── CORS / HTTP Utilities ────────────────────────────────────────
+httpx==0.27.0           # async HTTP client (used in tests)
+python-dotenv==1.0.1    # load .env files for API keys
+
+# ── Optional: Database (uncomment when adding a real DB) ─────────
+# sqlalchemy==2.0.30
+# alembic==1.13.1
+# psycopg2-binary==2.9.9   # PostgreSQL driver
