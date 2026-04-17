@@ -1,5 +1,7 @@
 # ⚙️ CRUD Architect — Prompt-Based CRUD Generator
 
+Project Live Demo:https://prompt-crud-generator.onrender.com
+
 > Describe your app in plain English → Get entities, REST APIs, database schema, and sample FastAPI code instantly.
 
 ![CRUD Architect](https://img.shields.io/badge/Built%20With-FastAPI%20%7C%20Vanilla%20JS-7c6dfa?style=flat-square)
