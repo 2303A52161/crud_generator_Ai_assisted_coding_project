@@ -63,6 +63,141 @@ prompt-crud-generator/
 
 ---
 
+===============================
+CRUD ARCHITECT – ALL PROMPTS
+===============================
+
+
+1. BASE SYSTEM PROMPT
+---------------------
+Generate a complete CRUD backend architecture for the given application.
+
+Return:
+- Application name
+- Entities / Models
+- Database schema
+- REST API endpoints (GET, POST, PUT, DELETE, PATCH)
+- Suggestions for improvements
+- Fully working FastAPI backend code
+
+Keep the structure clean and production-ready.
+
+
+
+2. STUDENT MANAGEMENT SYSTEM PROMPT
+-----------------------------------
+Build a student management system.
+
+Include:
+- Students, Courses, Grades, Attendance, Teachers
+- CRUD APIs for all entities
+- Relationships between students and courses
+- Grade calculation logic
+- Attendance tracking
+
+Generate FastAPI backend code.
+
+
+
+3. TODO APP PROMPT
+------------------
+Create a todo application.
+
+Include:
+- Tasks, Users, Categories
+- Task status (pending, completed)
+- Due dates
+- CRUD operations
+- API for marking task complete
+
+Generate FastAPI backend code.
+
+
+
+4. NOTES APP PROMPT
+-------------------
+Create a notes application with tagging support.
+
+Include:
+- Notes, Tags, Notebooks, Users
+- Search functionality
+- Tagging system (many-to-many)
+- CRUD APIs
+
+Generate FastAPI backend code.
+
+
+
+5. E-COMMERCE CATALOG PROMPT
+----------------------------
+Build an e-commerce product catalog system.
+
+Include:
+- Products, Categories, Orders, Cart, Reviews
+- Filtering (price, category, stock)
+- Cart management
+- Order creation
+- Review system
+
+Generate FastAPI backend code.
+
+
+
+6. BLOG PLATFORM PROMPT
+-----------------------
+Create a blog platform.
+
+Include:
+- Posts, Authors, Comments, Tags
+- Draft and publish system
+- Comment system
+- Slug generation
+- CRUD APIs
+
+Generate FastAPI backend code.
+
+
+
+7. DYNAMIC (GENERIC) PROMPT
+---------------------------
+Create a CRUD application for: {user_input}
+
+Automatically:
+- Identify main entity
+- Generate related entities (User, Category)
+- Create REST APIs
+- Design database schema
+- Provide FastAPI code
+
+Keep it generic and scalable.
+
+
+
+8. ENHANCEMENT / SUGGESTIONS PROMPT
+----------------------------------
+Based on the application, suggest improvements such as:
+- Performance enhancements
+- Additional features
+- Scalability improvements
+- Security best practices
+
+
+
+9. CODE GENERATION PROMPT
+-------------------------
+Generate complete FastAPI code with:
+
+- Pydantic models
+- CRUD routes
+- Error handling
+- In-memory database (or placeholder for DB)
+- Clean structure and comments
+
+
+
+===============================
+END OF FILE
+===============================
 ## 🚀 Quick Start — Frontend Only (GitHub Pages)
 
 The frontend works completely without a backend. No server needed.
